@@ -1,6 +1,6 @@
 ## typescript-template
 
-> A Typescript project template that can be used to publish a hybrid ESM/CJS NPM package.
+> A Typescript template that can be used to publish a hybrid ESM/CJS NPM package.
 
 ### Contributing to the project 💻
 
