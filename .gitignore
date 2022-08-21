@@ -104,6 +104,3 @@ typings/
 
 # Ignore package-lock.json
 package-lock.json
-
-# Ignore test.js
-test.js
