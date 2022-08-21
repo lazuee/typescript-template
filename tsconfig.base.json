@@ -40,16 +40,11 @@
     },
 
     "plugins": [
-      { "transform": "typescript-transform-paths" },
-      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+      { "transform": "typescript-transform-paths", "useRootDirs": true },
+      { "transform": "typescript-transform-paths", "useRootDirs": true, "afterDeclarations": true }
     ]
   },
 
   "include": ["src/**/*"],
-  "exclude": ["node_modules/**/*"],
-
-  "ts-node": {
-    "transpileOnly": true,
-    "require": ["typescript-transform-paths/register"]
-  }
+  "exclude": ["node_modules/**/*"]
 }

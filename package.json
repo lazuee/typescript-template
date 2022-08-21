@@ -38,18 +38,17 @@
   ],
   "scripts": {
     "release": "pnpm build && pnpm publish --access public",
-    "prepare": "ts-patch install && tsp ./dist",
-    "prepublish": "pnpm clean && pnpm build",
+    "prepare": "ts-patch install",
+    "prepublish": "pnpm build",
     "clean": "rimraf dist",
-    "build": "pnpm build:esm && pnpm build:cjs",
+    "build": "pnpm clean && pnpm build:esm && pnpm build:cjs && tsp ./dist",
     "build:esm": "tsc -p tsconfig.json",
     "build:cjs": "tsc -p tsconfig.cjs.json && echo { \"type\": \"commonjs\" } >> dist/cjs/package.json",
     "lint": "pnpm lint:prettier --check && pnpm lint:eslint",
     "lint:fix": "pnpm lint:eslint --fix && pnpm lint:prettier --write",
     "lint:eslint": "eslint \"./src/**/*.{cjs,js,jsx,mjs,ts,tsx,json,md,mdx,css,html,yml,yaml,scss}\" --max-warnings=0",
     "lint:prettier": "prettier \"./src/**/*.{cjs,js,jsx,mjs,ts,tsx,json,md,mdx,css,html,yml,yaml,scss}\" --ignore-unknown --loglevel warn",
-    "start:prod": "node dist/esm/test.js",
-    "start:dev": "ts-node src/test.ts"
+    "start": "node dist/esm/test.js"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
@@ -67,7 +66,6 @@
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-import-patch": "1.0.1",
-    "ts-node": "^10.9.1",
     "ts-patch": "2.0.2",
     "tslib": "2.4.0",
     "typescript": "^4.7.4",
