@@ -1,17 +1,21 @@
-## typescript-template
+## npm-package-template
 
-> A Typescript template that can be used to publish a hybrid ESM/CJS NPM package.
+> A hybrid ESM/CJS NPM package template.
 
 ### Contributing to the project 💻
 
-If you want to contribute to the project, please open an issue or pull request.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
 ### Star the project 🌟
 
-If you like the project, please leave a star on the [GitHub repository](https://github.com/lazuee/typescript-template).
+If you like the project, please leave a star on the [GitHub repository](https://github.com/lazuee/npm-package-template).
 
 ### License 🔑
 
-This program is licensed under the MIT License. See the LICENSE file in the root of the project or https://opensource.org/licenses/MIT for more info.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 Copyright © `2022` `lazuee`
